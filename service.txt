@@ -1,0 +1,23 @@
+apply Service "PowerMeter_Humi"{
+    import "generic-service"
+    check_command = "catch_PowerMeter_Humi"
+    assign where host.address && host.name == "PowerMeter_Monitor"
+}
+
+apply Service "PowerMeter_Temp"{
+    import "generic-service"
+    check_command = "catch_PowerMeter_Temp"
+    assign where host.address && host.name == "PowerMeter_Monitor"
+}
+
+apply Service "PowerMeter_Current"{
+    import "generic-service"
+    check_command = "catch_PowerMeter_Current"
+    assign where host.address && host.name == "PowerMeter_Monitor"
+}
+
+apply Service "PowerMeter_Power"{
+    import "generic-service"
+    check_command = "catch_PowerMeter_Power"
+    assign where host.address && host.name == "PowerMeter_Monitor"
+}

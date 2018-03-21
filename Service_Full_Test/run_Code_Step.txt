@@ -1,0 +1,5 @@
+1. Run Your PowerMeter Service is run down
+2. Find Your PowerMeter json return value Monitor Host IP & Port
+3. Change "http_Response.py" python File Service IP & Port
+4. Open the terminal Enter command "python3.6 http_Response.py"
+5. Get the Full Information PowerMeter Status Return json value on Terminal By the IP

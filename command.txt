@@ -1,0 +1,19 @@
+object CheckCommand "catch_PowerMeter_Humi" {
+    import "plugin-check-command"	
+    command = [ SysconfDir + "/icinga2/scripts/catch_PowerMeter_Humi.py" ]
+}
+
+object CheckCommand "catch_PowerMeter_Temp" {
+    import "plugin-check-command"
+    command = [ SysconfDir + "/icinga2/scripts/catch_PowerMeter_Temp.py" ]
+}
+
+object CheckCommand "catch_PowerMeter_Current" {
+    import "plugin-check-command"
+    command = [ SysconfDir + "/icinga2/scripts/catch_PowerMeter_Current.py" ]
+}
+
+object CheckCommand "catch_PowerMeter_Power" {
+    import "plugin-check-command"
+    command = [ SysconfDir + "/icinga2/scripts/catch_PowerMeter_Power.py" ]
+}

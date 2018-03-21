@@ -1,0 +1,6 @@
+object Host "PowerMeter_Monitor"{
+	import "generic-host"
+	display_name="PowerMeter_Monitor"
+	address = "127.0.0.1"
+	check_command="hostalive"
+}

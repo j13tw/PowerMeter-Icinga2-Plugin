@@ -1,0 +1,17 @@
+1. Check Your PowerMeter project is run down
+2. Find Your PowerMeter project json value return Host IP & Port
+3. Go to the "Service_Full_Test" Floder & Change the "http_Response.py" python File Service IP & Port
+4. Open the terminal Enter command "python3.6 http_Response.py"
+5. Get the Facyory_Control SystemMode All Status Return
+6. Check the code can run in your Icinga2 host computer
+7. Copy all file by name "catch_*.py" to your Icinga Plugin script Folder (/etc/icinga2/scripts/)
+8. Terminal command "sudo chomd 777 catch_* with all your file in Folder /etc/icinga2/scripts/
+9. Copy the command.txt content add to Icinga Plugin command config File (/etc/icinga2/conf.d/commands.conf)
+10.Copy the service.txt content add to Icinga Plugin service config File (/etc/icinga2/conf.d/services.conf)
+11.Copy the host.txt content add to Icinga Plugin host config File (/etc/icinga2/conf.d/hosts.conf)
+12.Creat the "ping.txt" & "os.txt" in Folder "/var/tmp"
+13.Terminal command "sudo chmod 777 ping.txt os.txt" 
+14.Terminal command "systemctl restart icinga2"
+15.Terminal command "systemctl status icinga2 -l" to debug the Error !
+
+#if you have any qusetion please mail to j13tw@yahoo.com.tw 
