@@ -27,7 +27,7 @@ if response == 0:						# check network sevice & server is on
 #		print (json.dumps(key , sort_keys=True, indent=4, separators=(',', ': ')))	# show on the all split json format
 #		change the json key to local temp value
 		currents = key['currents']
-		print ('輸入電壓 : ' + currents + ' A')																						#
+		print ('輸入電流 : ' + currents + ' A')																						#
 		sys.exit(0)
 	else:
 	   	print ('http://' + hostname +':' + port + ' Service Port Found !')
